@@ -1,0 +1,17 @@
+apiVersion: binding.operators.coreos.com/v1alpha1
+kind: ServiceBinding
+metadata:
+  name: test
+spec:
+  application:
+    group: apps
+    version: v1
+    name: app
+    kind: deployment
+  services:
+    - group: apps
+      version: v1
+      kind: deployment
+      name: service
+      namespace: test
+
