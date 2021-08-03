@@ -1,4 +1,4 @@
-module service-biding-test
+module github.com/kadel/service-binding-perm-issue
 
 go 1.16
 
