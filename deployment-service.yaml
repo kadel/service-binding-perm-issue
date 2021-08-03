@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: service
+  annotations:
+    "service.binding/test": "path={.metadata.name}"
 spec:
   replicas: 1
   selector:
